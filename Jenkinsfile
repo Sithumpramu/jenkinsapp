@@ -19,7 +19,7 @@ pipeline{
 
         stage("s3 deploy"){
             steps{
-                bat "aws s3 sync dist/ s3://jenkins-react-s3 --delete"
+                sh "aws s3 sync dist/ s3://jenkins-react-s3 --delete"
             }
 
         }
