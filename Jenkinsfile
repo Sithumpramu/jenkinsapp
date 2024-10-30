@@ -17,12 +17,12 @@ pipeline{
 
         }
 
-        stage("s3 deploy"){
-            steps{
-                sh "aws s3 sync dist/ s3://jenkins-react-s3 --delete"
-            }
+        // stage("s3 deploy"){
+        //     steps{
+        //         sh "aws s3 sync dist/ s3://jenkins-react-s3 --delete"
+        //     }
 
-        }
+        // }
     }
 
 }
